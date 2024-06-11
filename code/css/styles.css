@@ -1,0 +1,276 @@
+/* Reset default browser styles */
+* {
+  margin: 0em;
+  padding: 0em;
+  font-size: 100%;
+  border-style: none;
+  list-style-type: none;
+}
+
+/* Global styles */
+body {
+  font-family: Georgia, serif; /* Use Georgia font */
+  line-height: 1.6;
+  background-color: #f7f7f7; /* Light grey background */
+}
+
+header {
+  background-color: #004466; /* Gelos Blue */
+  color: #fff; /* White text color */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.logo img {
+  max-width: 150px; /* Adjust logo size as needed */
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+footer {
+  background-color: #004466; /* Gelos Blue */
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* index page start */
+#main-content {
+  margin: 10px;
+  display: flex;
+}
+#column1,
+#column2 {
+  width: 50%;
+}
+#column1 {
+  margin: auto;
+}
+#column2 img {
+  max-width: 500px;
+  margin: auto 50px;
+}
+#column1 h1,
+h2,
+h3,
+p,
+li {
+  margin: 15px;
+}
+#column1 li a {
+  text-decoration: none;
+  color: #004466;;
+  list-style-type: circle;
+}
+#column1 a :hover {
+  text-decoration: underline;
+  color: #004466;
+}
+
+/* about-us page start */
+#about {
+  display: flex;
+}
+
+#about #column1,
+#about #column2 {
+  width: 50%;
+}
+
+#about #column2 {
+  margin: auto;
+}
+
+#about #column2 img {
+  max-width: 500px;
+}
+
+/* qualification page start */
+
+#qualification {
+  display: flex;
+  margin: 10px;
+}
+
+#column1,
+#column2 {
+  width: 50%;
+}
+
+#column2 {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding: 20px;
+}
+#qualification #column2 h3 {
+  margin: 30px 7px;
+  color: #424754;
+}
+#qualification #column2 img {
+  max-width: 400px;
+}
+/* Image Gallery */
+
+.gallery {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+}
+
+.desc {
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+#navigation {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #ddb15e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #424754;
+}
+
+/* enquiry form page start */
+
+#Enquiry{
+  max-width: 500px;
+  margin: auto;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #15b1b1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #033a64;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* FAQ page start */
+
+.faq-list {
+  list-style-type: none;
+  padding: 2px;
+  font-size: large;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.answer {
+  display: none;
+  margin-bottom: 10px;
+}
+/* contact-us form page start */
+
+#contact {
+  margin: 10px;
+  display: flex;
+}
+
+#contact #column1,
+#contact #column2 {
+  width: 50%;
+  margin: auto;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="author" content="   Zohreh Daghigh Kia   " >
+    <title>Enquiry | Gelos Enterprises</title>
+    <link rel="stylesheet" href="./css/styles.css" >
+    <script src="./js/form-validation.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="./images/GE-stacked-logo-reverse.png"
+          alt="Gelos Enterprises Logo"
+        >
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="qualification.html">Qualification</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="Enquiry">
+      <h2>Enquiry</h2>
+      <form
+        id="enquiryForm"
+        action="#"
+        method="post"
+        onsubmit="return validateForm()" novalidate
+      >
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName" required >
+
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" name="lastName" required >
+
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" required ><br>
+
+        <label for="mobile">Mobile number:</label>
+        <input type="tel" id="mobile" name="mobile" required ><br>
+
+        <label for="preferredContact">Preferred contact method:</label>
+        <select id="preferredContact" name="preferredContact">
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+        </select>
+
+        <label for="enquiry">Your enquiry is:</label>
+        <textarea id="enquiry" name="enquiry" required></textarea>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required >
+
+        <label for="comments"
+          >Please enter your comments, question, or message:</label
+        >
+        <textarea id="comments" name="comments"></textarea>
+
+        <label for="files">Attach documents:</label><br >
+        <input
+          type="file"
+          id="files"
+          name="files"
+          multiple
+          accept=".pdf, .doc, .docx"
+        >
+
+        <label>
+          <input type="checkbox" name="subscribe" value="yes" >
+          YES I’d like to be kept informed of Gelos Enterprises news, events and
+          marketing
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2024 Gelos Enterprises. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
